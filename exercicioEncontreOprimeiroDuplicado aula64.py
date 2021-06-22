@@ -13,13 +13,12 @@ Exercício
                 [1, 2, 3, 4, 5, 6] -> Retorne -1 (não tem duplicados)
             Se não encontrar duplicados na lista, retorne -1
 """
-
-#def encontrar_duplicado():
-
 contador = 0
 anterior = 0
 atual = 0
 temDuplicado = False
+
+#def encontrar_duplicado():
 
 lista_de_listas_de_inteiros = [
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
@@ -44,10 +43,9 @@ for i in range(0, 12):
         if anterior == atual and temDuplicado == False:
             temDuplicado = True
             print(f'O primeiro número duplicado encontrado é {atual}')
-            #return atual
 
-        #elif contador == 9 and temDuplicado == False:
-            #return -1
+        elif contador == 9 and temDuplicado == False:
+            print('Não há elemento duplicado nesta lista.')
 
         atual = anterior
         print(j)
